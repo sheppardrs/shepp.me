@@ -1,0 +1,429 @@
+
+/* colors are taken from the mixpanel landing page, mixpanel.com*/
+
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    color: #37383c;
+    background: #f8f9fc;
+    overflow-x: hidden;
+}
+ul {
+    list-style-type: none;
+}
+p { 
+    font-family: 'Roboto', sans-serif;
+    color: #6b7c93;
+    letter-spacing: 1pt; /*https://www.w3schools.com/cssref/pr_text_letter-spacing.asp*/
+    line-height: 200%; /*https://www.w3schools.com/cssref/pr_dim_line-height.asp*/
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Fredericka the Great', cursive;
+}
+button {
+    background-color: #4284fb;
+    background-color: #00693E;
+    border: none;
+    border-radius: 3px;
+    font-size: 20;
+    padding: 3% 5%;
+    margin: 5%;
+    font-family: "Apercu Pro","Helvetica Neue",Helvetica,sans-serif;
+    color: white;
+}
+button:hover {
+    padding: 3.5% 5.5%;
+    margin: 4.5%;
+    transition-duration: .5s; /* idea of transitions from class, Regina Yan '19, code from: 
+    https://stackoverflow.com/questions/8566090/delay-hover-in-css3*/
+}
+h1 {
+    font-family: "Apercu Pro","Helvetica Neue",Helvetica,sans-serif;
+    color: #37383c;
+}
+img {
+    border-radius: 12px;
+}
+
+
+/* Main scrollable screen section */
+.mainContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: -10 0 0 0;
+    padding: 0;
+    text-align: center;
+    background: #f8f9fc;
+}
+.mainContent > div { /*https://www.w3schools.com/cssref/css_selectors.asp*/
+    margin: 5%;
+}
+.mainContent > div:first-child { /*https://www.w3schools.com/cssref/css_selectors.asp*/
+    margin: 10% 5% 3% 5%;
+}
+.actionSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    text-align: center;
+}
+.actionSection:last-child {
+    background-color: white;
+    margin: 0;
+    padding: 5%;
+}
+#leftFloatDiv {
+    height: 0;
+    align-self: left;
+}
+.floatDiv {
+    height: 0;
+}
+#leftFloatDiv img { /* https://www.w3schools.com/css/css3_animations.asp*/
+    max-width: 20%;
+    position: absolute;
+    left: -12%;
+    top: 40%;
+    animation-name: leftFloatMv;
+    animation-duration: 7s;
+    animation-iteration-count:  infinite;
+    animation-direction: alternate;
+}
+@keyframes leftFloatMv {
+    0% {left: -12%; top: 40%;}
+    100% {left: -8%; top: 45%;}
+}
+#rightFloatDiv img {
+    max-width: 30%;
+    position: absolute;
+    right: -12%;
+    top: 30%;
+    animation-name: rightFloatMv;
+    animation-duration: 7s;
+    animation-iteration-count:  infinite;
+    animation-direction: alternate;
+}
+@keyframes rightFloatMv {
+    0% {right: -20%; top: 30%;}
+    100% {right: -15%; top: 33%;}
+}
+.mainContent .bubleSection {
+    margin: 0 5%;
+}
+.sectionImage {
+    width: 90%;
+    margin: 0 5% 0 5%;
+}
+.bubbles img  {
+    width: 70;
+}
+.bubbles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 3% 5% 0 5%;
+    z-index: 1;
+}
+.bubble {
+    width: 100;
+    margin: 2%;
+}
+.bubble p  {
+    line-height: 100%;
+}
+.testimonials {
+    background:  #00693E;
+    margin: 5%;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #f8f9fc;
+    text-align: left;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: flex-start;
+    /* border: 3px solid  #00693E; */
+    width: 33%;
+    margin: 2%;
+    padding: 5%;
+    background-color: white;
+    box-shadow: 0 1px 3px 1px rgba(160,161,188,.14); /* copied from mixpanel.com */
+    transition: 1s  box-shadow; /* idea from Regina Yan to delay this, code from: https://stackoverflow.com/questions/8566090/delay-hover-in-css3 */
+    transition: 1s transform; /* same as above */
+}
+.card:hover { /*https://www.w3schools.com/cssref/sel_hover.asp*/
+    box-shadow: 3pt 3pt 3pt #dfe0e2; /*https://www.w3schools.com/cssref/css3_pr_box-shadow.asp*/
+    transform: translate3d(-3px,-3px, 0);
+    /* background-color:  #00693E; */
+}
+.card div {
+    width: 80%;
+}
+.card p {
+    width: 90%;
+    line-height: 110%;
+}
+.card img {
+    max-width: 50%;
+    max-height: 15%;
+    padding: 2%;
+}
+.actionSection p {
+    margin: 0;
+}
+.cards h2 {
+    margin: 3% 0;
+}
+.caps {
+    text-transform: uppercase; /*https://www.w3schools.com/cssref/pr_text_text-transform.asp*/
+    color: #00693E;
+    letter-spacing: 3pt;
+}
+@media only screen and (max-width: 640px) {
+    .card {
+        width: 90%;
+    }
+    .footerLists {
+        flex-direction: column;
+    }
+    .footerLists ul {
+        height: 22px;
+        overflow: hidden;
+    }
+    .footerLists li {
+        /* display: none; */
+    }
+    .footerLists ul:hover {
+        height: 20%;
+    }
+}
+
+
+/* carousel */
+/*https://css-tricks.com/the-checkbox-hack/*/
+/*https://codeburst.io/how-to-pure-css-carousel-ce1a8cb231c8*/
+/* code directly copied from above URL*/
+/* with some slight modifications and styling changes */
+.carousel {
+    margin: 0 5% 0 0;
+}
+.carousel input {
+    display: none;
+}
+.carousel_slide {
+    display: none;
+    /* overflow-y: auto; */
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+}
+.carousel_control--for {
+    margin: 0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.carousel_control--back {
+    margin: 0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* aaannndd back to directly copied from the same source with tiny changes to class names */
+.carousel_activator:nth-of-type(1):checked ~ .carousel_slide:nth-of-type(1) {
+    display: flex;
+    animation: showSlide 0.5s;
+}
+.carousel_activator:nth-of-type(2):checked ~ .carousel_slide:nth-of-type(2) {
+    display: flex;
+    animation: showSlide 0.5s;
+}
+.carousel_activator:nth-of-type(3):checked ~ .carousel_slide:nth-of-type(3) {
+    display: flex;
+    animation: showSlide 0.5s;
+}
+.carousel_activator:nth-of-type(4):checked ~ .carousel_slide:nth-of-type(4) {
+    display: flex;
+    animation: showSlide 0.5s;
+}
+.carousel_acitvator:nth-of-type(1):checked ~ .carousel_indicators .carousel_indicator:nth-of-type(1) {
+    color: #00693E;
+}
+.carousel_activator:nth-of-type(2):checked ~ .carousel_indicators .carousel_indicator:nth-of-type(2) {
+    color: #00693E;
+}
+.carousel_activator:nth-of-type(3):checked ~ .carousel_indicators .carousel_indicator:nth-of-type(3) {
+    color: #00693E;
+}
+.carousel_activator:nth-of-type(4):checked ~ .carousel_indicators .carousel_indicator:nth-of-type(4) {
+    color: #00693E;
+}
+/* end of directly copied */
+
+/* timed carousel */ 
+/* basic animation info https://css-tricks.com/almanac/properties/a/animation/ */
+/*  direct slideshow code: https://codepen.io/daysahead/pen/mJqBge?editors=1100 */
+/* animation idea used, but with flex boxes instead of absolute, and reworked % for 
+    3 slides and specific transitions*/ 
+.slider {
+    overflow: hidden;
+    margin: 0 auto;
+}
+.sliderWrapper {
+    width: 300%;
+    display: flex; 
+    flex: row; 
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    animation: slide 18s ease infinite;
+}
+.sliderSection {
+    float: left;
+    width: 90%;
+    padding: 0 3%;
+}
+@keyframes slide {
+    0% {margin-left: 0%;}
+    24% {margin-left: 0%;}
+    33% {margin-left: -100%;}
+    57% {margin-left: -100%;}
+    66% {margin-left: -200%;}
+    90% {margin-left: -200%;}
+}
+/* end of directly copied code */ 
+#testimonials {
+    background-color: #00693E;
+    margin: 5% 0;
+    padding: 3% 0;
+}
+#testimonials p {
+    color: white; 
+}
+.sliderSection img {
+    width: 80%;
+
+}
+
+/* checked w3Schools for video, but then 
+    realized to just copy code from youtube video */
+.videoSection {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.videoSection div {
+    width: 50%;
+    margin-right: 5%;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    flex: column;
+    align-items: center;
+    font-family: 'Fredericka the Great', cursive;
+}
+footer a {
+    font-family: 'Roboto', sans-serif;
+    color: #6b7c93;
+}
+.footerLists {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: left;
+    justify-content: center;
+    font
+}
+.legalSection ul{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+}
+.legalSection li {
+    padding: 1%;
+
+}
+.legalSection {
+    padding: 2%;
+}
+
+
+
+/* navigation bar */
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    margin: 2% 2%;
+}
+nav a {
+    padding: 0 13 0 13;
+}
+nav h1 {
+    font-family: 'Fredericka the Great', cursive;
+    margin: 0;
+}
+.logo {
+    align-self: center;
+    margin: 0 2%;
+}
+/* nav input {
+    display: none;
+} */
+*[id^="nav-toggle"] {
+    display: none;
+}
+@media only screen and (max-width: 830px) {
+    nav ul {
+        height: 0;
+        overflow: hidden;
+    }
+    nav {
+        margin: 3%;
+
+    }
+    #nav-toggle-lbl{
+        display: block;
+    }
+    /* https://css-tricks.com/the-checkbox-hack/ */
+    #nav-toggle:checked ~ ul {
+        display: flex;
+        flex-flow: row wrap;
+        height: auto;
+        margin: 5% 10%;
+        transition: .5s;
+
+    }
+}
+
+
+ /* font-family: 'Exo', sans-serif;
+ font-family: 'Playfair Display SC', serif;
+font-family: 'Vidaloka', serif;
+font-family: 'Yellowtail', cursive;
+font-family: 'Oleo Script', cursive;
+font-family: 'Fredericka the Great', cursive; */

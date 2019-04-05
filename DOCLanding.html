@@ -1,0 +1,278 @@
+<html>
+    <head>
+        <title>DOC Woodsmoke Landing</title>
+        <link rel="stylesheet" href="DOCstyle.css">
+        <link href="https://fonts.googleapis.com/css?family=Exo|Fredericka+the+Great|Old+Standard+TT|Oleo+Script|Playfair+Display+SC|Vidaloka|Yellowtail" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto|Work+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    </head>
+    <body> 
+        <nav>
+            <a class="logo" href="./index.html"><h1>WOODSMOKE</h1></a>
+            <!-- Checkbox toggle from lab and https://css-tricks.com/the-checkbox-hack/ -->
+            <input type="checkbox" id="nav-toggle" />
+            <label for="nav-toggle" id="nav-toggle-lbl"><i class="fas fa-water"></i></label>
+            <ul>
+                <li><a href="#">CnT</a></li>
+                <li><a href="#">Ledyard</a></li>
+                <li><a href="#">DMC</a></li>
+                <li><a href="#">B&B</a></li>
+                <li><a href="#">Surf</a></li>
+                <li><a href="#">WSC</a></li>
+                <li><a href="#">WIW</a></li>
+                <li><a href="#">POCO</a></li>
+            </ul>
+        </nav>
+        <div class="mainContent">
+            <div class="actionSection">
+                <h1>See what the DOC has been up to this past year</h1>
+                <p>This winter break the DOC ran 16 break trips (a record number)! 
+                    This spring break a whole new host of trips went out. Get involved 
+                    in the DOC to enjoy future day trips and break trips.</p>
+                <span><button>Get Involved</button></span>
+                <div class="floatDiv" id="leftFloatDiv">
+                    <img src="./images/carabiner.png" cite="http://pngimg.com/uploads/carabiner/carabiner_PNG27.png"/>
+                </div>
+                <div class="floatDiv" id="rightFloatDiv">
+                        <img src="images/LostSurfboard.png" cite="https://lostsurfboards.net/wp-content/uploads/2018/05/RNF.png" />
+                    </div>
+            </div>
+            <div class="bubleSection">
+                <img class="sectionImage" src="images/sunset.png" />
+                <p class="caps">Enjoyed by 153 students...</p>
+                <div class="bubbles">
+                    <div class="bubble">
+                        <img src="https://www.facebook.com/search/async/profile_picture/?fbid=100002991402214&width=72&height=72"/>
+                        <p>Sheppard Somers</p>
+                    </div>
+                    <div class="bubble">
+                        <img src="https://scontent.fzty2-1.fna.fbcdn.net/v/t31.0-8/27993099_1958657550829316_1462844398079120633_o.jpg?_nc_cat=108&_nc_ht=scontent.fzty2-1.fna&oh=8467188d8e6100e7e1bb842a61f02f56&oe=5D436F2E"/>
+                        <p>Mallory Bird</p>
+                    </div>
+                    <div class="bubble">
+                        <img src="https://www.facebook.com/search/async/profile_picture/?fbid=100001072146640&width=72&height=72"/>
+                        <p>Grace Callahan</p>
+                    </div>
+                    <div class="bubble">
+                        <img src="https://scontent.fzty2-1.fna.fbcdn.net/v/t1.0-1/p200x200/26001284_1523197927734124_5270488837412707505_n.jpg?_nc_cat=107&_nc_ht=scontent.fzty2-1.fna&oh=df338a74e096b59924f85c0bf5814751&oe=5D0AF11F"/>
+                        <p>Laura Hutchinson
+                        </p>
+                    </div>
+                    <div class="bubble">
+                         <img src="https://www.facebook.com/search/async/profile_picture/?fbid=100001730173040&width=72&height=72"/>
+                        <p>John Brady</p>
+                    </div>
+                    <div class="bubble">
+                        <img src="https://scontent.fzty2-1.fna.fbcdn.net/v/t1.0-1/c139.0.320.320a/p320x320/23843384_1664682370250558_7300215758692446386_n.jpg?_nc_cat=108&_nc_ht=scontent.fzty2-1.fna&oh=306118fc28f5bc9f6802a9ff9e5cb30c&oe=5D0588DE"/>
+                        <p>Jordan Sandford</p>
+                    </div>
+                    <div class="bubble">
+                        <img src="https://www.facebook.com/search/async/profile_picture/?fbid=100001159239441&width=72&height=72"/>
+                        <p>Regina Yan</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slider">
+                <!-- https://css-tricks.com/the-checkbox-hack/ -->
+                <!-- and mainly: https://codeburst.io/how-to-pure-css-carousel-ce1a8cb231c8-->
+                <!-- this code is directly copied from above url -->
+                <h1>
+                    Experience, grow, and create friendship. One trip at a time.
+                </h1>
+                <div class="carousel">
+                    <input type="radio" id="1" name="activator" checked="checked" class="carousel_activator" />
+                    <input type="radio" id="2" name="activator" class="carousel_activator" />
+                    <input type="radio" id="3" name="activator" class="carousel_activator" />
+                    <input type="radio" id="4" name="activator" class="carousel_activator" />
+                    <li class="carousel_slide">
+                        <label for="4" class="carousel_control--back"><i class="fas fa-chevron-left"></i></label>
+                        <div class="sliderSection">
+                            <h2>Choose an Activity</h2>
+                            <p>Choose where you want to do. What new skills do you want to learn? 
+                                What activity would you like to refine your skills in? What kind of 
+                                risk are you willing to accept? What environment do you want to partake in?
+                            </p>
+                        </div>
+                        <label for="2" class="carousel_control--for"><i class="fas fa-chevron-right"></i></label>
+                    </li>
+                    <li class="carousel_slide">
+                        <label for="1" class="carousel_control--back"><i class="fas fa-chevron-left"></i></label>
+                        <div class="sliderSection">
+                            <h2>Pick a Location</h2>
+                            <p>Choose where you want to go. Identify the pros and cons of 
+                                traveling to each location and the experience the location 
+                                will help create. Consider the costs of each location as well 
+                                as the convenience. 
+                            </p>
+                        </div>
+                        <label for="3" class="carousel_control--for"><i class="fas fa-chevron-right"></i></label>
+                    </li>
+                    <li class="carousel_slide">
+                        <label for="2" class="carousel_control--back"><i class="fas fa-chevron-left"></i></label>
+                        <div class="sliderSection">
+                            <h2>Identify a Group</h2>
+                            <p>Is this a personal trip? An open club trip? Publicize the trip 
+                                and gauge interest, then identify who will be enjoying the experience 
+                                you are creating. 
+                            </p>
+                        </div>
+                        <label for="4" class="carousel_control--for"><i class="fas fa-chevron-right"></i></label>
+                    </li>
+                    <li class="carousel_slide">
+                        <label for="3" class="carousel_control--back"><i class="fas fa-chevron-left"></i></label>
+                        <div class="sliderSection">
+                            <h2>Find Funding</h2>
+                            <p>With an amazing activity and location in mind, how are you going to fund 
+                                the adventure? If it is an official club trip, then work with your club 
+                                to put in the club's term budget. If it is a personal trip consider 
+                                appling for the <a href="#">Schlitz</a>, <a href="#">Vale</a>, and/or <a href="#">
+                                Leadership</a> funds. 
+                            </p>
+                        </div>
+                        <label for="1" class="carousel_control--for"><i class="fas fa-chevron-right"></i></label>
+                    </li>
+                    <div class="carousel_indicators">
+                        <label for="1" class="carousel_indicator"><i class="fas fa-circle"></i></label>
+                        <label for="2" class="carousel_indicator"><i class="fas fa-circle"></i></label>
+                        <label for="3" class="carousel_indicator"><i class="fas fa-circle"></i></label>
+                        <label for="4" class="carousel_indicator"><i class="fas fa-circle"></i></label>
+                    </div>
+                </div>
+                <!--end of directly copied code-->
+            </div>
+            <div class="slider" id="testimonials">
+                <div class="sliderWrapper" >
+                    <div class="sliderSection" id="slide1">
+                        <h2>Cabin and Trail</h2>
+                        <p>"Break trips are an integral part of building involvement in the club and creating 
+                            skills for a lifetime of hiking."
+                        </p>
+                        <p>Annapolis Elitis</p>
+                    </div>
+                    <div class="sliderSection" id="slide2">
+                        <h2>Ledyard</h2>
+                        <p>"Kayaking is terrifying yet so rewarding."
+                        </p>
+                        <p>Beritious GrandPa</p>
+                    </div>
+                    <div class="sliderSection" id="slide3">
+                        <h2>Surf Club</h2>
+                        <p>"On our trip it was amazing to have so many continuous days of surfing. It really 
+                            helped me improve my surfing and make trips here on campus way more enjoyable!"
+                        </p>
+                        <p>Sophelia DeRagg</p>
+                    </div>
+                </div>
+            </div>
+            <div class="videoSection">
+                <div>
+                    <h2>The Impact of Break Trips on Dartmouth</h2>
+                    <p>See how students from different backgrounds and parts of campus are impacted by DOC break trips.</p>
+                    <a href="#">See Student Testimonials</a><br/>
+                </div>
+                <iframe src="https://www.youtube.com/embed/znKuaubFDAs?list=PLbteoQETf5C0oLRkKujGbfrtREoXo0CFx" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div><h2>Surfing in SoCal</h2>
+                    <strong>Ride the waves</strong></div>
+                    <p>Enjoy the ocean and learn to surf. Engage with the environment that covers two thirds 
+                        of our globe!
+                    </p>
+                </div>
+                <div class="card">
+                    <div><h2>Climbing in Nevada</h2>
+                    <strong>Up Up and Away</strong></div>
+                    <p>Haul yourself up some rocks. Learn some technical skills while enjoying rocks and sunny 
+                        skys.
+                    </p>
+                </div>
+                <div class="card">
+                    <div><h2>Kayaking in Ecuador </h2>
+                    <strong>Flow with the floods</strong></div>
+                    <p>Run down the rapids of the upper Andes in Ecuador. No fear of running dry, it's 
+                        a rain forest!
+                    </p>
+                </div>
+            </div>
+            <div class="slider">
+                <!-- <button id="clickLeft"><i class="fas fa-arrow-circle-left"></i></button>
+                <button id="clickRight"><i class="fas fa-arrow-circle-right"></i></button> -->
+                <div class="sliderWrapper">
+                    <div class="sliderSection">
+                        <img src="images/Hack.JPG" width="300"/>
+                        <div>
+                            <h2>Surf Trip 2018</h2>
+                            <a href="#">Read about the trip</a>
+                        </div>
+                    </div>
+                    <div class="sliderSection">
+                        <img src="images/Boulder.JPG" width="300"/>
+                        <div>
+                            <h2>Climbing Out West</h2>
+                            <a href="#">Read about the trip</a>
+                        </div>
+                    </div>
+                    <div class="sliderSection">
+                        <img src="images/Ecuador.JPG" width="300"/>
+                        <div>
+                            <h2>Ecuador</h2>
+                            <a href="#">Read about the trip</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="actionSection">
+                <p>Join the DOC</p>
+                <h2>What will you do?</h2>
+                <p>Challenge yourself</p>
+                <span><button>Join the DOC</button></span>
+            </div>
+        </div>
+        <footer>
+            <div class="footerLists">
+                <ul>Clubs
+                    <li><a href="#">CnT</a></li>
+                    <li><a href="#">Ledyard</a></li>
+                    <li><a href="#">DMC</a></li>
+                    <li><a href="#">B&B</a></li>
+                    <li><a href="#">Surf Club</a></li>
+                    <li><a href="#">WSC</a></li>
+                    <li><a href="#">WIW</li>
+                    <li><a href="#">POCO</a></li>
+                </ul>
+                <ul>History
+                    <li><a href="#">DOC</a></li>
+                    <li><a href="#">OPO</a></li>
+                    <li><a href="#">The Grant</a></li>
+                    <li><a href="#">DOR</a></li>
+                    <li><a href="#">Cabins</a></li>
+                    <li><a href="#">The Lodge</a></li>
+                </ul>
+                <ul>Organization
+                    <li><a href="#">Mission</a></li>
+                    <li><a href="#">People</a></li>
+                    <li><a href="#">Locations</a></li>
+                </ul>
+                <ul>Resources
+                    <li><a href="#">Constitution</a></li>
+                    <li><a href="#">Leader Req.</a></li>
+                    <li><a href="#">Risk Policy</a></li>
+                </ul>
+                <ul>Social Media
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+            </div>
+            <div class="legalSection">
+                <ul>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Membership</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+                <i class="far fa-copyright"></i> 2019 Sheppard Somers. All rights reserved. Content <i class="far fa-copyright"></i> DOC and student members.
+            </div>
+        </footer>
+
+    </body>
