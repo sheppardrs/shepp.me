@@ -1,7 +1,7 @@
 body {
     display: flex;
     flex-direction: column;
-    background-color: rgb(255, 240, 235);
+    background-image: linear-gradient(rgb(241, 159, 53, 1), rgba(241, 159, 53, 0));
     align-content: center;
     justify-content: center;
     padding: 0;
@@ -31,8 +31,57 @@ header p {
     font-weight: 800;
 }
 .mainContent {
-    margin: 0 20% 5% 20%;
+    margin: 0 10% 5% 10%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     color: rgb(35, 25, 20);
+}
+
+
+
+
+nav { 
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+
+}
+
+.entryForm {
+    display: flex; 
+    flex-direction: column;
+}
+
+.entryForm input {
+    width: min-content;
+}
+
+.entryForm button {
+    width: min-content;
+}
+
+.pageContent { 
+    display: flex; 
+    flex-direction: content;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+footer { 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer h2 { 
+    flex-basis: 90%;
+    justify-self: center;
+    justify-content: center;
 }
